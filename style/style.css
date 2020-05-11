@@ -17,11 +17,13 @@ a, img {
 
 .content-position {
   margin: 0 auto;
-  max-width: 1366px;
+  max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 body {
-  background-color: #d69696;
+  background-color: #fff;
 }
 
 body header {
@@ -104,6 +106,145 @@ body header .header-title .title-subtitle {
 }
 
 body header .header-btn {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .header-btn a .btn {
+  opacity: .7;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+body header .header-btn a .btn:hover {
+  opacity: 1;
+}
+
+body main .main-section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+body main .main-section-1 .description-wrap {
+  width: 470px;
+}
+
+body main .main-section-1 .description-wrap .heading {
+  letter-spacing: 4px;
+  text-align: left;
+  color: #333b46;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+body main .main-section-1 .description-wrap .text {
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #81868e;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.79;
+  letter-spacing: 1px;
+}
+
+body main .main-section-1 .description-wrap .btn {
+  letter-spacing: normal;
+  text-align: center;
+  color: #333b46;
+  font-size: 16px;
+  padding: 12px 35px;
+  background: none;
+  border: 1px solid #333b46;
+  border-radius: 50px;
+}
+
+body main .main-section-1 .img-wrap {
+  margin: 10px;
+}
+
+body main .main-section-1 .img-wrap .img {
+  width: 250px;
+}
+
+body main .main-section-2 {
+  background-color: #f3f3f3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body main .main-section-2 .content .heading-1 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #333b46;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body main .main-section-2 .content .text {
+  line-height: 1.79;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #81868e;
+  margin-bottom: 60px;
+}
+
+body main .main-section-2 .content .icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+body main .main-section-2 .content .icon-wrap .icon {
+  width: 53px;
+  height: 53px;
+  margin: 0 20px;
+}
+
+body main .main-section-2 .content .heading-2 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #333b46;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+body main .main-section-2 .content .paragraf-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .main-section-2 .content .paragraf-wrap .text {
+  width: 500px;
+  font-size: 14px;
+  line-height: 1.79;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #81868e;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

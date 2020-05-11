@@ -29,3 +29,28 @@
     margin: 0 auto;
     max-width: 1000px;
 }
+////btn
+@mixin radial-btn-dark{
+    letter-spacing: normal;
+    text-align: center;
+    color: #333b46;
+    font-size: 16px;
+
+    padding: 12px 35px;
+
+    background: none;
+    border: 1px solid #333b46;
+    border-radius: 50px;
+}
+@mixin radial-btn-light{
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+
+    padding: 12px 35px;
+
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
