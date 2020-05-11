@@ -7,13 +7,128 @@
     padding: 0;
     user-select: none; 
     box-sizing: border-box;
+
+    @include font-one;
 }
 a, img {
     cursor: pointer;
 }
+.content-position{
+    margin: 0 auto;
+    max-width: 1366px;
+}
 // all styles
 
 body{
-    
+    background-color: #d69696;
+    header{
+        padding-top: 40px;
+        background-image: url(../assets/bg/header-bg.png);
+        background-size: 100% 100vh;
+        height: 100vh;
+        .nav-wrap{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .logo-wrap{
+                padding: 10px;
+                .logo{
+                    width: 110px;
+                }
+            }
+            .nav-items{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    .item{
+                        padding: 10px 20px;
+                        border: 2px solid transparent;
+
+                        @include animation-time;
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                    .item:last-child{
+                        margin-right: 0;
+                    }
+                    .item:hover{
+                        border: 2px solid #fff;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        } 
+        .header-title{
+            margin-top: 270px;
+            margin-bottom: 300px;
+            .title-suptitle{
+                font-size: 45px;
+                letter-spacing: 7px;
+                text-align: center;
+                color: #fff;
+                padding-bottom: 45px;
+            }
+            .title-subtitle{
+                font-size: 18px;
+                letter-spacing: 0.8px;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+        .header-btn{
+            margin: 0 auto;
+        }
+    }
+    main{
+        .main-section-1{
+
+        }
+        .main-section-2{
+
+        }
+        .main-section-3{
+
+        }
+        .main-section-4{
+
+        }
+        .main-section-5{
+
+        }
+        .main-section-6{
+
+        }
+        .main-section-7{
+
+        }
+        .main-section-8{
+
+        }
+        .main-section-9{
+
+        }
+        .main-section-10{
+
+        }
+        .main-section-11{
+
+        }
+        .main-section-12{
+
+        }
+        .main-section-13{
+
+        }
+        .main-section-14{
+
+        }
+        .main-section-15{
+
+        }
+    }
 }
 @import "media.scss";
+ 
