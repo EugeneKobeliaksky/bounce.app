@@ -105,20 +105,15 @@ body{
             .description-wrap{
                 width: 470px;
                 .heading{
-                    letter-spacing: 4px;
+                    @include heading;
                     text-align: left;
-                    color: #333b46;
                     margin-bottom: 50px;
                     text-transform: uppercase;
                 }
                 .text{
-                    letter-spacing: 0.7px;
+                    @include text;
                     text-align: left;
-                    color: #81868e;
                     margin-bottom: 30px;
-                    font-size: 16px;
-                    line-height: 1.79;
-                    letter-spacing: 1px;
                 }
                 .btn{
                     @include radial-btn-dark;
@@ -137,19 +132,12 @@ body{
             padding-bottom: 100px;
             .content{
                 .heading-1{
-                    font-size: 20px;
-                    letter-spacing: 4px;
-                    text-transform: uppercase;
-                    color: #333b46;
-                    text-align: center;
+                    @include heading;
 
                     margin-bottom: 40px;
                 }
                 .text{
-                    line-height: 1.79;
-                    letter-spacing: 0.7px;
-                    text-align: center;
-                    color: #81868e;
+                    @include text;
 
                     margin-bottom: 60px;
                 }
@@ -179,12 +167,8 @@ body{
                     display: flex;
                     justify-content: space-around;
                     .text{
-                        width: 500px;
-                        font-size: 14px;
-                        line-height: 1.79;
-                        letter-spacing: 0.7px;
+                        @include text;
                         text-align: left;
-                        color: #81868e;
 
                         margin-bottom: 0;
                     }
@@ -192,7 +176,79 @@ body{
             }
         }
         .main-section-3{
+            padding-top: 80px;
+            .heading-wrap{
+                .heading{
+                    @include heading;
+                    margin-bottom: 40px;
+                }
+                .text{
+                    @include text;
+                    margin-bottom: 60px;
+                }
+            }
+            .content-wrap{
+                display: flex;
+                .img-wrap{
+                    background-color: #151515;
+                    position: relative;
+                    height: 300px;
+                    width: 100%;
+                    min-width: 150px;
+                    overflow: hidden;
 
+                    @include animation-time;
+                    .img-text{
+                        position: absolute;
+                        top: 50%;
+                        left: 40%;
+
+                        font-size: 20px;
+                        letter-spacing: 4px;
+                        color: #ffffff;
+
+                        text-transform: uppercase;
+
+                        @include animation-time;
+                    }
+                    img{
+                        opacity: .1;
+                        width: 800px;
+                        height: 300px;
+
+                        @include animation-time;
+                    }
+                    img:hover{
+                        opacity: 1;
+                    }
+                }
+                .img-wrap:hover{
+                    width: 130%;
+                }
+                .img-wrap:hover .img-text{
+                    display: none;
+                }
+            }
+            .sub-wrap{
+                background-image: url(../assets/bg/fold-bg.png);
+                height: 110px;
+                background-position: center;
+                .sub-content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 30px;
+                    p{
+                        font-size: 20px;
+                        line-height: 1.25;
+                        letter-spacing: 0.8px;
+                        color: #ffffff;
+                    }
+                    .btn{
+                        @include radial-btn-light;
+                    }
+                }
+            }
         }
         .main-section-4{
 

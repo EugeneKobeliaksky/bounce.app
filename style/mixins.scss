@@ -54,3 +54,17 @@
     border: 1px solid #fff;
     border-radius: 50px;
 }
+///heading and text style
+@mixin heading{
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #333b46;
+    text-align: center;
+}
+@mixin text{
+    line-height: 1.79;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #81868e;
+}
